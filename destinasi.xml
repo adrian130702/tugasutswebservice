@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.5
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Nov 06, 2023 at 05:20 AM
+- Server version: 10.1.38-MariaDB
+- PHP Version: 7.3.3
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="pariwisata" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="destinasi">
+                CREATE TABLE `destinasi` (
+                  `nama destinasi` varchar(255) NOT NULL,
+                  `alamat destinasi` varchar(255) NOT NULL,
+                  `tarif` int(255) NOT NULL,
+                  `jenis destinasi` varchar(255) NOT NULL,
+                  PRIMARY KEY (`nama destinasi`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'pariwisata'
+    -->
+    <database name="pariwisata">
+        <!-- Table destinasi -->
+    </database>
+</pma_xml_export>
